@@ -5,6 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="content">
@@ -12,7 +13,7 @@
         <nav class="nav_menu">
           <ul>
             <li> <a href="#">Информация</a> </li>
-            <li> <a class="foto active" href="#">Фото и Видео</a> </li>
+            <li> <a class="foto" href="#">Фото и Видео</a> </li>
             <li class="logo_container">
                 <div class="logo">
                   <a class="nav_logo" href="index.html"><img src="img/logo.png" width="140" height="70" alt="Главная"></a>
@@ -26,16 +27,16 @@
       <main>
         <div class="intro">
           <div class="intro_welcome">
-            <img src="img/welcome.png" width="195" height="55" alt="Welcome">
+            <img src="img/welcome.png" width="188" height="45" alt="Welcome">
           </div>
           <div class="intro_italic_grey">
-            <img src="img/gorgeous.png" width="265" height="30" alt="— to the gorgeous —">
+            <img src="img/gorgeous.png" width="256" height="30" alt="— to the gorgeous —">
           </div>
           <div class="intro_sedona">
-            <img src="img/sedona.png" width="465" height="90" alt="Sedona">
+            <img src="img/sedona.png" width="457" height="78" alt="Sedona">
           </div>
           <div class="intro_italic_white">
-            <img src="img/because.png" width="300" height="90" alt="Because the Grand Canyon sucks">
+            <img src="img/because.png" width="296" height="80" alt="Because the Grand Canyon sucks">
           </div>
           <div class="intro_bottom">
             <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,</br>
@@ -117,26 +118,44 @@
           </p>
           <button class="btn_title btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
         </div>
-        <div class="search_form_body">
-          <form class="search_form" action="#" method="post">
-            <label for="date_in">Дата заезда:</label>
-            <input type="date" name="date_in" id="date_in" value="24 Апреля 2016"> <div class="date_icon"></div>
-            <label for="date_out">Дата выезда:</label>
-            <input type="date" name="date_out" id="date_out" value="4 июля 2016"> <div class="date_icon"></div>
-            <label for="adults">Взрослые:</label>
-            <input type="text" name="adults" min="0" id="adults" value="2">
-              <div class="number_icon">
-                <div class="number_min"></div>
-                <div class="number_max"></div>
+        <div class="footer_map">
+          <div class="search_form_body">
+            <form class="search_form" action="#" method="post">
+              <div class="search_form_date">
+                <label for="date_in">Дата заезда:</label>
+                <input type="date" name="date_in" id="date_in" value="24 Апреля 2016"> <div class="date_icon"></div>
               </div>
-            <label for="children">Дети:</label>
-            <input type="text" name="children" min="0" id="children" value="0">
-              <div class="number_icon">
-                <div class="number_min"></div>
-                <div class="number_max"></div>
+              <div class="search_form_date">
+                <label for="date_out">Дата выезда:</label>
+                <input type="date" name="date_out" id="date_out" value="4 июля 2016"> <div class="date_icon"></div>
               </div>
-            <button class="btn_search btn" type="submit">НАЙТИ</button>
-          </form>
+              <div class="search_form_adult">
+                <ul>
+                  <li><label for="adults">Взрослые:</label></li>
+                  <li>
+                    <input type="number" name="adults" min="0" id="adults" value="2">
+                    <div class="number_icon">
+                      <div class="number_min"></div>
+                      <div class="number_max"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="search_form_child">
+                <ul>
+                  <li class="child"><label for="children">Дети:</label></li>
+                  <li>
+                    <input type="number" name="children" min="0" id="children" value="0">
+                    <div class="number_icon">
+                      <div class="number_min"></div>
+                      <div class="number_max"></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="btn_search btn" type="submit">НАЙТИ</button>
+            </form>
+          </div>
           <div class="footer_bottom clearfix">
             <div class="footer_item">
               <a class="visit" href=#>#visitsedona</a>
@@ -151,11 +170,9 @@
             <div class="footer_item">
               <div class="academy_web">
                 <span>WEBSITE BY</span>
-                <a class="academy" href="https://htmlacademy.ru/">
-                </a>
+                <a class="academy" href="https://htmlacademy.ru/"></a>
+              </div>
             </div>
-            </div>
-          </div>
         </div>
       </footer>
     </div>
