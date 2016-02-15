@@ -262,28 +262,18 @@ text-align: center;
   background-color: #766357;
   margin-top: 35px;
 }
-.footer_map {
-  position: relative;
-  width: 100%;
-  height: 592px;
+.footer_map{
+  background: url("../img/map.jpg") no-repeat;
 }
 .search_form{
   box-sizing:border-box;
-  position: absolute;
   width:568px;
-  height: 395px;
+  min-height:395px;
+  margin:0 auto;
   padding: 55px;
-  left: 50%;
-  top: 0;
-  margin-left:-284px;
+  margin-bottom: 78px;
   box-shadow: 0 0 8px -2px #34495e;
   background-color: #ffffff;
-}
-.search_form_body{
-  display:none;
-}
-.search_form_show{
-  display: block;
 }
 .search_form label{
   font-family: "PT Sans", "Arial", sans-serif;
@@ -363,19 +353,19 @@ display: table-cell;
 .date_icon::after{
   content: "";
   position: absolute;
-  width:30px;
-  height: 38px;
+  width:21px;
+  height: 22px;
   left:-32px;
-  top:-24px;
+  top:-16px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -195px -3px;
+  background-position: -199px -10px;
   cursor: pointer;
 }
 .date_icon:hover::after{
-  background-position: -236x -3px;
+  background-position: -240px -10px;
 }
 .date_icon:active::after{
-  background-position: -276.5px -3px;
+  background-position: -281px -10px;
 }
 
 .search_form input[type="number"]{
@@ -391,36 +381,36 @@ display: table-cell;
 .number_icon .number_min{
   content: "";
   position: absolute;
-  width: 30px;
-  height: 38px;
-  left:-33px;
-  top:-24px;
+  width: 11px;
+  height: 11px;
+  left:-32px;
+  top:-11px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -2px 2px;
+  background-position: -10px -10px;
   cursor: pointer;
 }
 .number_min:hover{
-  background-position: -97px 2px;
+  background-position: -105px -10px;
 }
 .number_min:active{
-  background-position: -160px 2px;
+  background-position: -168px -10px;
 }
 .number_icon .number_max{
   content: "";
   position: absolute;
-  width: 30px;
-  height: 38px;
-  left:-118px;
-  top: -24px;
+  width: 11px;
+  height: 11px;
+  left:-100px;
+  top:-7px;
   background: url("../img/spritesheet.png") no-repeat;
-  background-position: -32px 7px;
+  background-position: -41px -10px;
   cursor: pointer;
 }
 .number_max:hover{
-  background-position: -64px 7px;
+  background-position: -73px -10px;
 }
 .number_max:active{
-  background-position: -127px 7px;
+  background-position: -136px -10px;
 }
 .search_form input:hover{
   background-color: #ebebeb;
@@ -443,8 +433,6 @@ outline: 2px solid #e5e5e5;
   color:#88b6d1;
 }
 .footer_bottom{
-  position: absolute;
-  bottom: 0;
 }
 .visit{
   margin: 0;
@@ -459,7 +447,6 @@ outline: 2px solid #e5e5e5;
   text-transform: uppercase;
   text-decoration: none;
   display: inline-block;
-  cursor: pointer;
 }
 .visit:hover{
   color:#81b3d2;
