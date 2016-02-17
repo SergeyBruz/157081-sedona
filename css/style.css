@@ -37,9 +37,11 @@ h3{
 input[type=number] {
     -moz-appearance:textfield;
 }
+input::-webkit-calendar-picker-indicator,
 input::-webkit-inner-spin-button,
 input::-webkit-outer-spin-button {
     -webkit-appearance: none; margin: 0px;
+    display: none;
         }
 .clearfix::after {
   content: "";
@@ -372,7 +374,7 @@ display: table-cell;
   cursor: pointer;
 }
 .date_icon:hover::after{
-  background-position: -236x -3px;
+  background-position: -236px -3px;
 }
 .date_icon:active::after{
   background-position: -276.5px -3px;
@@ -444,7 +446,14 @@ outline: 2px solid #e5e5e5;
 }
 .footer_bottom{
   position: absolute;
-bottom: 0;
+  bottom: 0;
+  min-height: 121px;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+.footer_item{
+  float:left;
+  width:400px;
 }
 .visit{
   margin: 0;
@@ -461,6 +470,9 @@ bottom: 0;
   display: inline-block;
   cursor: pointer;
 }
+.footer_bottom .visit{
+  padding-top: 50px;
+}
 .visit:hover{
   color:#81b3d2;
 }
@@ -470,6 +482,9 @@ bottom: 0;
 .social{
   padding-top: 30px;
   padding-left: 10px;
+}
+.footer_bottom .social{
+  padding-top:35px;
 }
 .social a{
 font-size: 0px;
@@ -512,20 +527,12 @@ outline: none;
 .social_icon_yo:active{
   background-position: -322px -214px;
 }
-.footer_bottom{
-  min-height: 121px;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-}
-.footer_item{
-  float:left;
-  width:400px;
-}
+
 
 .academy_web span{
   display: inline-block;
   position: relative;
-  padding-right: 10px;
+  padding-right: 5px;
   top:-15px;
 }
 .academy{
@@ -535,6 +542,9 @@ outline: none;
   height: 39px;
   background: url("../img/spritesheet.png") no-repeat;
   background-position: -105px -142px;
+}
+.footer_bottom .academy{
+    margin-top: 45px;
 }
 .academy:hover{
   background-position: -10px -260px;
@@ -925,7 +935,7 @@ outline: none;
   width:111px;
   height: 17px;
   background: url("../img/stars.png") no-repeat;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
 }
 .stars_amara{
   background-position: 23px 0;
@@ -940,6 +950,8 @@ outline: none;
 .rating{
   background-color: #f2f2f2;
   text-align: center;
+  padding-top:3px;
+  padding-bottom: 3px;
 }
 .hotels_footer{
   min-height: 121px;
