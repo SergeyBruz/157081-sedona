@@ -69,11 +69,11 @@ box-shadow: 0 0 8px -2px #34495e;
 .nav_menu{
   min-height: 56px;
   width: 100%;
-  margin-left:73px;
 }
 .nav_menu ul{
   margin: 0;
   padding:0;
+  padding-left: 73px;
   list-style: none;
   font-size: 0;
 }
@@ -183,10 +183,11 @@ box-shadow: 0 0 8px -2px #34495e;
 
 .blue_column h2{
   color: inherit;
+  padding-top: 55px;
   margin-bottom: 23px;
   line-height: 21px;
 }
-.img_city{
+.img_city {
   width:800px;
   height: 256px;
 }
@@ -195,14 +196,12 @@ box-shadow: 0 0 8px -2px #34495e;
   height: 256px;
 }
 .blue_column{
-  box-sizing: border-box;
-  width: 400px;
+  width: 290px;
+  min-height: 256px;
   background-color: #81b3d2;
   color: white;
   padding-right: 55px;
   padding-left: 55px;
-  padding-bottom: 52px;
-  padding-top: 55px;
 }
 .page_content .number{
   display: block;
@@ -306,7 +305,7 @@ text-align: center;
   font-size: 14px;
   line-height: 26px;
 }
-.search_form input[type="date"]{
+.search_form input[type="text"]{
   width:300px;
   padding-left:15px;
   padding-right: 30px;
