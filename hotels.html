@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
@@ -45,7 +45,7 @@
               </li>
               <li>
                 <label class="type_check" for="wifi">
-                  <input type="checkbox" name="wifi" id="wifi">
+                  <input type="checkbox" name="wifi" id="wifi" disabled checked>
                   <span class="checkbox_indicator"></span>
                   Wi-Fi
                 </label>
@@ -64,14 +64,14 @@
               </li>
               <li>
                 <label class="type_check" for="motel">
-                  <input class="disabled"type="checkbox" name="motel" id="motel">
+                  <input class="disabled" type="checkbox" name="motel" id="motel">
                   <span class="checkbox_indicator"></span>
                   Мотель
                 </label>
               </li>
               <li>
                 <label class="type_check" for="apart">
-                  <input type="checkbox" name="apart" id="apart">
+                  <input type="checkbox" name="apart" id="apart" disabled>
                   <span class="checkbox_indicator"></span>
                   Апартаменты
                 </label>
@@ -105,8 +105,8 @@
               <li><a class="sort_rat" href="#">По рейтингу</a></li>
             </ul>
             <div class="sort_btn">
-              <div class="up active"></div>
-              <div class="down"></div>
+              <div class="up"></div>
+              <div class="down active"></div>
             </div>
         </div>
         <div class="hotels_result">
