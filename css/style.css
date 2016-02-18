@@ -209,7 +209,10 @@ box-shadow: 0 0 15px -4px #34495e;
   line-height: 21px;
 }
 .img_city {
+<<<<<<< HEAD
   background-color: #aa8e8b;
+=======
+>>>>>>> origin/master
   width:800px;
   height: 256px;
 }
